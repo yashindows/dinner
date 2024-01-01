@@ -1,63 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/styles/reset.css">
-    <link rel="stylesheet" href="./static/styles/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/styles/reset.css" />
+    <link rel="stylesheet" href="./static/styles/main.css" />
     <title></title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <a data-item="link" class="header-logo" href="/">
-                <img src="./static/img/logo.svg" alt="Логотип">
-            </a>
-            <div class="searchbar">
-                <input type="text" placeholder="Найти рецпет...">
-                <button class="search-btn">
-                    <img src="./static/img/icons/search-icon.svg" alt="Искать">
-                </button>
-            </div>
-            <a data-item="link" href="/add" class="btn add-recipe">
-                <img src="./static/img/icons/plus.svg" alt="Добавить рецпет">
-            </a>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header>
-        <aside class="sidebar">
-            <div class="sidebar-wrapper">
-                <ul class="sidebar-body">
-                    <h2 class="sidebar__title">Категории</h2>
-                    <li class="sidebar__item">
-                        <a data-item="link" href="/soups" class="sidebar__link link_close">Супы</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a data-item="link" href="/salads" class="sidebar__link link_close">Салаты</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a data-item="link" href="/main-course" class="sidebar__link link_close">Вторые блюда</a>
-                    </li>
-                    <li class="sidebar__item">
-                        <a data-item="link" href="/drinks" class="sidebar__link link_close">Напитки</a>
-                    </li>
-                </ul>
-                <div class="links">
-                    <a data-item="link" href="/my-recipes" class="btn my-recipes link_close">Мои рецпеты</a>
-                    <a data-item="link" href="/add" class="btn my-recipes add-recipe_mobile link_close">Добавить рецпет</a>
-                    <a data-item="link" href="/my-recipes" class="btn my-recipes search-recipe_mobile link_close">Поиск рецепта</a>
-                </div>
-            </div>
-        </aside>
-        <main class="content" id="container">
-        </main>
+      <header class="header">
+        <a data-item="link" class="header-logo" href="/">
+          <img src="./static/img/logo.svg" alt="Логотип" />
+        </a>
+        <div class="searchbar">
+          <input type="text" placeholder="Найти рецпет..." />
+          <button class="search-btn">
+            <img src="./static/img/icons/search-icon.svg" alt="Искать" />
+          </button>
+        </div>
+        <a data-item="link" href="/add" class="btn add-recipe">
+          <img src="./static/img/icons/plus.svg" alt="Добавить рецпет" />
+        </a>
+        <div class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      <aside class="sidebar">
+        <div class="sidebar-wrapper">
+          <ul class="sidebar-body">
+            <h2 class="sidebar__title">Категории</h2>
+            <li class="sidebar__item">
+              <a data-item="link" href="/soups" class="sidebar__link link_close"
+                >Супы</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                data-item="link"
+                href="/salads"
+                class="sidebar__link link_close"
+                >Салаты</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                data-item="link"
+                href="/main-course"
+                class="sidebar__link link_close"
+                >Вторые блюда</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a
+                data-item="link"
+                href="/drinks"
+                class="sidebar__link link_close"
+                >Напитки</a
+              >
+            </li>
+          </ul>
+          <div class="links">
+            <a
+              data-item="link"
+              href="/my-recipes"
+              class="btn my-recipes link_close"
+              >Мои рецпеты</a
+            >
+            <a
+              data-item="link"
+              href="/add"
+              class="btn my-recipes add-recipe_mobile link_close"
+              >Добавить рецпет</a
+            >
+            <a
+              data-item="link"
+              href="/my-recipes"
+              class="btn my-recipes search-recipe_mobile link_close"
+              >Поиск рецепта</a
+            >
+          </div>
+        </div>
+      </aside>
+      <main class="content" id="container"></main>
     </div>
     <script src="./static/js/burger.js"></script>
     <script src="./static/js/favorite.js"></script>
     <script type="module" src="./static/js/index.js"></script>
-</body>
+  </body>
 </html>

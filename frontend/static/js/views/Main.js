@@ -1,13 +1,13 @@
-import TemplateView from "./TemplateView.js";
+import TemplateView from './TemplateView.js'
 
 export default class extends TemplateView {
-    constructor(){
-        super();
-        this.setTitle('Главная');
-    }
+  constructor() {
+    super()
+    this.setTitle('Главная')
+  }
 
-    async getHtml(){
-        return `<div class="recipe-card-wrapper">
+  async getHtml() {
+    return `<div class="recipe-card-wrapper">
                 <div class="recipe-card">
                     <a data-item="link" href="/soups" class="recipe-forward"></a>
                     <img class="recipe-img" src="./static/img/icons/soup.png"/>
@@ -36,6 +36,6 @@ export default class extends TemplateView {
                         Напитки
                     </div>
                 </div>
-            </div>`;
-    }
+            </div>`
+  }
 }

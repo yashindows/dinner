@@ -1,13 +1,13 @@
-import TemplateView from "./TemplateView.js";
+import TemplateView from './TemplateView.js'
 
 export default class extends TemplateView {
-    constructor(){
-        super();
-        this.setTitle('Добавление рецепта');
-    }
+  constructor() {
+    super()
+    this.setTitle('Добавление рецепта')
+  }
 
-    async getHtml(){
-        return `<div class="form">
+  async getHtml() {
+    return `<div class="form" enctype="multipart/form-data">
                     <h2 class="add__title">Добавление рецепта</h2>
                     <input type="text" class="add__field" placeholder="Название"/>
                     <input type="text" class="add__field" placeholder="Ингредиенты"/>
@@ -21,6 +21,6 @@ export default class extends TemplateView {
                     </label>
                         <input type="submit" class="btn" value="Отправить рецепт"/>
                     </div>
-                </div>`;
-    }
+                </div>`
+  }
 }
